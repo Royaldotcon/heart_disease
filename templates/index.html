@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Heart Disease Detector</title>
+  <link rel="stylesheet" href="../static/style.css">
+</head>
+
+<body>
+  <h1>💓 Heart Disease Predictor</h1>
+  <form id="predict-form">
+    <input name="age" type="number" placeholder="Age" required>
+    <input name="sex" type="number" placeholder="Sex (0=female, 1=male)" required>
+    <input name="cp" type="number" placeholder="Chest Pain Type (1-4)" required>
+    <input name="trestbps" type="number" placeholder="Resting BP" required>
+    <input name="chol" type="number" placeholder="Cholesterol" required>
+    <input name="fbs" type="number" placeholder="Fasting Sugar > 120 (0 or 1)" required>
+    <input name="restecg" type="number" placeholder="Resting ECG (0-2)" required>
+    <input name="thalach" type="number" placeholder="Max Heart Rate" required>
+    <input name="exang" type="number" placeholder="Exercise Angina (0 or 1)" required>
+    <input name="oldpeak" type="number" step="0.1" placeholder="Oldpeak" required>
+    <input name="slope" type="number" placeholder="Slope (1-3)" required>
+    <button type="submit">Predict</button>
+  </form>
+  <div id="result"></div>
+
+  <script src="../static/script.js"></script>
+</body>
+</html>
